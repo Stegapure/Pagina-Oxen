@@ -587,6 +587,15 @@
 
             <div class="demo-body">
                 <div class="demo-gallery">
+                    <div class="demo-carousel-controls">
+                        <button class="carousel-nav" id="demoPrev" type="button" aria-label="Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel-status" id="demoStatus">Paso 1 de 9</div>
+                        <button class="carousel-nav" id="demoNext" type="button" aria-label="Siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                     <div class="gallery-track" id="galleryTrack">
                         <div class="gallery-slide is-active" data-step="0">
                             <div class="slide-tag">Dashboard</div>
@@ -1372,6 +1381,9 @@
         const progressLabel = document.getElementById('progressLabel');
         const prevStep = document.getElementById('prevStep');
         const nextStep = document.getElementById('nextStep');
+        const demoPrev = document.getElementById('demoPrev');
+        const demoNext = document.getElementById('demoNext');
+        const demoStatus = document.getElementById('demoStatus');
         let currentStep = 0;
 
         const setStep = (index) => {
@@ -1381,6 +1393,9 @@
             const progress = ((currentStep + 1) / steps.length) * 100;
             progressBar.style.width = `${progress}%`;
             progressLabel.textContent = `Paso ${currentStep + 1} de ${steps.length}`;
+            if (demoStatus) {
+                demoStatus.textContent = `Paso ${currentStep + 1} de ${steps.length}`;
+            }
             prevStep.disabled = currentStep === 0;
             nextStep.textContent = currentStep === steps.length - 1 ? 'Finalizar' : 'Siguiente';
         };
@@ -1406,6 +1421,10 @@
             }
             setStep(currentStep + 1);
         });
+        if (demoPrev && demoNext) {
+            demoPrev.addEventListener('click', () => setStep(currentStep - 1));
+            demoNext.addEventListener('click', () => setStep(currentStep + 1));
+        }
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape') {
                 closeDemo();
