@@ -295,22 +295,22 @@
                         </p>
                         <p><strong>El servicio inicia con un pago unico de <a href="#puesta-en-marcha">puesta en marcha</a>, que incluye licencia, instalacion, configuracion y capacitacion; posteriormente se realiza el pago de la suscripcion mensual segun el plan seleccionado.</strong></p>
                     </div>
-                    <div class="pricing-table">
+                    <div class="pricing-table selected-basic" id="pricingTable">
                         <div class="pricing-header">
                             <div></div>
-                            <div class="plan-head">
+                            <div class="plan-head is-active" data-plan="basic">
                                 <div class="plan-tag">Plan Basico</div>
                                 <div class="plan-price">$350.000 / mes</div>
                                 <div class="plan-users">Hasta 5 usuarios</div>
                                 <div class="plan-annual">Pago anual: ahorro $420.000</div>
                             </div>
-                            <div class="plan-head featured">
+                            <div class="plan-head featured" data-plan="pro">
                                 <div class="plan-tag">Plan Profesional</div>
                                 <div class="plan-price">$650.000 / mes</div>
                                 <div class="plan-users">Hasta 10 usuarios</div>
                                 <div class="plan-annual">Pago anual: ahorro $780.000</div>
                             </div>
-                            <div class="plan-head premium">
+                            <div class="plan-head premium" data-plan="elite">
                                 <div class="plan-tag">Plan Elite</div>
                                 <div class="plan-price">$720.000 / mes</div>
                                 <div class="plan-users">Hasta 15 usuarios</div>
@@ -318,86 +318,86 @@
                             </div>
                         </div>
 
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="yes" data-pro="yes" data-elite="yes">
                             <div class="feature-name">Inventarios (insumos, materia prima)</div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="yes" data-pro="yes" data-elite="yes">
                             <div class="feature-name">Kardex y reservas por orden</div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="yes" data-pro="yes" data-elite="yes">
                             <div class="feature-name">Ordenes de produccion</div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="yes" data-pro="yes" data-elite="yes">
                             <div class="feature-name">Diseño: ficha tecnica y ficha de corte</div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="yes" data-elite="yes">
                             <div class="feature-name muted">Diseño: ruta y tabla de medidas</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="yes" data-elite="yes">
                             <div class="feature-name muted">Registros de produccion por etapa</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="yes" data-elite="yes">
                             <div class="feature-name muted">Control de talleres y satelites</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="yes" data-elite="yes">
                             <div class="feature-name muted">Producto terminado y ventas</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="yes" data-elite="yes">
                             <div class="feature-name muted">Dashboards y alertas operativas</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="no" data-elite="yes">
                             <div class="feature-name muted">Modulo de costos</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="no" data-elite="yes">
                             <div class="feature-name muted">Pagos pendientes</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="no" data-elite="yes">
                             <div class="feature-name muted">Pagos a terceros</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="no" data-pro="no" data-elite="yes">
                             <div class="feature-name muted">Soporte prioritario 24/7</div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check muted"><i class="fas fa-times-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                         </div>
 
-                        <div class="pricing-row">
+                        <div class="pricing-row" data-basic="yes" data-pro="yes" data-elite="yes">
                             <div class="feature-name">Acceso web desde cualquier dispositivo</div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
                             <div class="feature-check"><i class="fas fa-check-circle"></i></div>
@@ -1370,6 +1370,23 @@
         }, { threshold: 0.2 });
 
         document.querySelectorAll('.reveal').forEach((section) => observer.observe(section));
+    </script>
+    <script>
+        const planHeads = document.querySelectorAll('.plan-head[data-plan]');
+        const pricingTable = document.getElementById('pricingTable');
+        planHeads.forEach((head) => {
+            head.addEventListener('click', () => {
+                planHeads.forEach((item) => item.classList.remove('is-active'));
+                head.classList.add('is-active');
+                if (pricingTable) {
+                    pricingTable.classList.remove('selected-basic', 'selected-pro', 'selected-elite');
+                    const plan = head.dataset.plan;
+                    if (plan === 'basic') pricingTable.classList.add('selected-basic');
+                    if (plan === 'pro') pricingTable.classList.add('selected-pro');
+                    if (plan === 'elite') pricingTable.classList.add('selected-elite');
+                }
+            });
+        });
     </script>
     <script>
         const demoModal = document.getElementById('demoModal');
